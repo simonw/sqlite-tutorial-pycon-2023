@@ -72,3 +72,12 @@ create table peps (
   description text
 ) strict
 ```
+## sqlite-utils (and JSON)
+
+Three of these types map neatly to JSON: integer, real (float), text.
+
+`blob` is the odd-one out, because JSON can't represent binary data that doesn't fit in utf-8. But `blob` columns are pretty rare - really you only need to worry about them if you are storing things like raw image data.
+
+Since SQLite types map cleanly to JSON, we can get a lot done using the combination of SQLite and JSON.
+
+That's where [sqlite-utils](https://sqlite-utils.datasette.io/) comes in.
