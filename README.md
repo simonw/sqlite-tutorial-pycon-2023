@@ -63,7 +63,7 @@ SQLite is loosely typed by default: you can insert any type into any column, eve
 
 A lot of people find this very uncomfortable.
 
-As-of SQLite 3.37.0 (2021-11-27) you can set 'strict' mode on a table to opt-out of this loose typing:
+As-of SQLite 3.37.0 (2021-11-27) you can set [strict mode](https://www.sqlite.org/stricttables.html) on a table to opt-out of this loose typing:
 
 ```sql
 create table peps (
