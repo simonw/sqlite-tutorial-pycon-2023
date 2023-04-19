@@ -177,7 +177,8 @@ Here's an example of the impact transactions have on file-based databases:
 ```
 In another window:
 ```
-% sqlite-utils dump data.db
+% sqlite3 data.db .dump
+PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE foo (id integer primary key, name text);
 COMMIT;
@@ -188,7 +189,8 @@ COMMIT;
 ```
 In the other window:
 ```
-% sqlite-utils dump data.db
+% sqlite3 data.db .dump
+PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE foo (id integer primary key, name text);
 COMMIT;
@@ -198,10 +200,11 @@ COMMIT;
 ```
 And now:
 ```
-% sqlite-utils dump data.db
+% sqlite3 data.db .dump
+PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE foo (id integer primary key, name text);
-INSERT INTO "foo" VALUES(1,'text');
+INSERT INTO foo VALUES(1,'text');
 COMMIT;
 ```
 A nicer pattern is to do this:

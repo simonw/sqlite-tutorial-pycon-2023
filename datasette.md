@@ -35,9 +35,7 @@ Open it in Datasette like this:
 
     datasette legislators.db
 
-We'll follow this tutorial to explore Datasette's features:
-
-**[Exploring a database with Datasette](https://datasette.io/tutorials/explore)**
+We'll follow this tutorial to explore Datasette's features: **[Exploring a database with Datasette](https://datasette.io/tutorials/explore)**
 
 ## Install some plugins
 
