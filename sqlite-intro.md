@@ -133,6 +133,32 @@ To confirm that it was correctly inserted:
 print(db.execute("select * from peps").fetchall())
 ```
 
+## UPDATE and DELETE
+
+To update a record:
+
+```python
+with db:
+    db.execute("""
+    update peps set author = ?
+    where id = ?
+    """, ["Tim Peters", 20])
+```
+This will run in a transaction.
+
+To delete a record:
+
+```python
+with db:
+    db.execute("""
+    delete from peps
+    where id = ?
+    """, [20])
+```
+Or to delete everything:
+```sql
+delete from peps
+```
 ## SQLite column types
 
 SQLite `create table` is easier than many other databases, because there are less types to worry about. There are four types you need to worry about:
