@@ -91,7 +91,7 @@ def parse_pep(s):
 ```
 Let's fetch and parse the Zen of Python:
 ```python
-import urllib
+import urllib.request
 
 zen = urllib.request.urlopen(
     "https://raw.githubusercontent.com/python/peps/main/pep-0020.txt"
