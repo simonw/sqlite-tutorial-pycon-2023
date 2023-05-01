@@ -32,8 +32,8 @@ And deploy the database:
 
 Datasette can publish to the following providers:
 
-- Heroku (`datasette publish cloudrun`)
-- Google Cloud Run (`datasette publish heroku`)
+- Heroku (`datasette publish heroku`)
+- Google Cloud Run (`datasette publish cloudrun`)
 - Vercel (with [datasette-publish-vercel](https://datasette.io/plugins/datasette-publish-vercel))
 - Fly (with [datasette-publish-fly](https://datasette.io/plugins/datasette-publish-fly))
 
