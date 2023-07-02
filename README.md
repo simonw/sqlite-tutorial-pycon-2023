@@ -2,7 +2,7 @@
 
 A three hour tutorial presented at PyCon 2023.
 
-https://sqlite-tutorial-pycon-2023.readthedocs.io/
+Now available as **[an official Datasette tutorial](https://datasette.io/tutorials/data-analysis)**.
 
 2hr45m YouTube video of this tutorial: https://www.youtube.com/watch?v=5TdIxxBPUSI
 
