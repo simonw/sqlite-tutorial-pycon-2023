@@ -94,7 +94,7 @@ Let's fetch and parse the Zen of Python:
 import urllib.request
 
 zen = urllib.request.urlopen(
-    "https://raw.githubusercontent.com/python/peps/main/pep-0020.txt"
+    "https://raw.githubusercontent.com/python/peps/main/peps/pep-0020.rst"
 ).read().decode("utf-8")
 
 pep = parse_pep(zen)
