@@ -34,7 +34,7 @@ We now have ALL of the PEPs in `/tmp/peps`
 ```python
 import pathlib
 
-files = list(pathlib.Path("/tmp/peps").glob("pep-*.txt"))
+files = list(pathlib.Path("/tmp/peps/peps").glob("pep-*.rst"))
 ```
 And parse them with our function from earlier:
 ```python
