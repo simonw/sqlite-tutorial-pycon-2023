@@ -161,7 +161,7 @@ delete from peps
 ```
 ## SQLite column types
 
-SQLite `create table` is easier than many other databases, because there are less types to worry about. There are four types you need to worry about:
+SQLite `create table` is easier than many other databases, because there are less types to worry about. There are four types:
 
 - `integer`
 - `real`
